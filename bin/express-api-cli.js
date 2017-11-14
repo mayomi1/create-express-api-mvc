@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var program = require('commander');
 const mkdirp = require('mkdirp');
 const fs = require('fs');
