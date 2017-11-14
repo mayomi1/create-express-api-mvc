@@ -148,17 +148,25 @@ function createApplication (name, path) {
     app.locals.uses = [];
 
     mkdir(path, function () {
-        mkdir(path + '/controllers', function () {
+        mkdir(path + 'app/', function () {
+            copyTemplate('js/app.js', path + '/app.js');
+        });
+
+        mkdir(path + 'app/', function () {
+            copyTemplate('js/router.js', path + '/router.js');
+        });
+
+        mkdir(path + 'app/controllers', function () {
             copyTemplate('js/controllers/home.js', path + '/controllers/home.js');
             complete()
         });
 
-        mkdir(path + '/config', function () {
+        mkdir(path + 'app/config', function () {
             copyTemplate('js/config/main.js', path + 'config/main.js');
             complete()
         });
 
-        mkdir(path + '/models', function () {
+        mkdir(path + 'app/models', function () {
             copyTemplate('js/models/home.js', path + 'models/home.js');
             complete()
         });
