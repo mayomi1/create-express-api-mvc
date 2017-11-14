@@ -1,7 +1,4 @@
-/**
- *Created by mayomi.ayandiran on 11/14/17
- */
-const program = require('commander');
+var program = require('commander');
 const mkdirp = require('mkdirp');
 const fs = require('fs');
 const path = require('path');
