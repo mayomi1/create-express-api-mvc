@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="express-api-cli.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="express-api-cli.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/express-api-cli.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="175" column="37" lean-forward="true" selection-start-line="175" selection-start-column="37" selection-end-line="175" selection-end-column="37" />
+            <state relative-caret-position="-3911">
+              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="29" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="525">
+              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -97,8 +97,8 @@
         <option value="$PROJECT_DIR$/bin/express-api.js" />
         <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/config/main.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/bin/express-api-cli.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -163,6 +163,17 @@
             <path>
               <item name="create-express-api-mvc" type="b2602c69:ProjectViewProjectNode" />
               <item name="create-express-api-mvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="create-express-api-mvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="create-express-api-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="create-express-api-mvc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="create-express-api-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,12 +267,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510645605645</updated>
-      <workItem from="1510645606735" duration="9210000" />
+      <workItem from="1510645606735" duration="10240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9210000" />
+    <option name="totallyTimeSpent" value="10240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="0" />
@@ -380,18 +391,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/bin/express-api-cli.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="29" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="-3911">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/express-api-cli.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="175" column="37" lean-forward="true" selection-start-line="175" selection-start-column="37" selection-end-line="175" selection-end-column="37" />
+        <state relative-caret-position="525">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding />
         </state>
       </provider>

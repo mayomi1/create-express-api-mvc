@@ -178,7 +178,7 @@ function createApplication (name, path) {
             version: '0.0.0',
             private: true,
             scripts: {
-                start: 'node ./bin/www'
+                start: 'node app.js'
             },
             dependencies: {
                 "bluebird": "^3.5.1",
@@ -195,11 +195,11 @@ function createApplication (name, path) {
 
         // write files
         write(path + '/package.json', JSON.stringify(pkg, null, 2) + '\n')
-        write(path + '/app.js', app.render())
-        mkdir(path + '/bin', function () {
-            write(path + '/bin/www', www.render(), MODE_0755);
-            complete()
-        });
+        write(path + '/app.js', app.render());
+        // mkdir(path + '/bin', function () {
+        //     write(path + '/bin/www', www.render(), MODE_0755);
+        //     complete()
+        // });
 
         if (program.git) {
             copyTemplate('js/gitignore', path + '/.gitignore')
