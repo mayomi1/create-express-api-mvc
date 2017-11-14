@@ -1,4 +1,42 @@
-[![NPM Version](http://img.shields.io/npm/v/create-express-api-mvc.svg?style=flat)](https://www.npmjs.com/package/create-express-api-mvc)
+# Express Api generator [![NPM Version](http://img.shields.io/npm/v/create-express-api-mvc.svg?style=flat)](https://www.npmjs.com/package/create-express-api-mvc)
 [![NPM Downloads](https://img.shields.io/npm/dm/create-express-api-mvc.svg?style=flat)](https://www.npmjs.com/package/create-express-api-mvc)
 
-### Do not install yet, still under development ###
+
+## Installation
+
+```sh
+$ npm install -g create-express-api-mvc -g 
+```
+
+
+#### For example, the following creates an Express app named myapp in the current working directory:
+
+
+### express-api myapp:
+
+```bash
+$ express-api myapp
+
+   create : myapp
+   create : myapp/package.json
+   create : myapp/app.js
+   create : myapp/controllers/
+   create : myapp/controllers/home.js
+   create : myapp/config/
+   create : myapp/config/main.js
+   create : myapp/models/
+   create : myapp/models/main.js
+   create : myapp/
+   create : myapp/app.js
+   create : myapp/
+   create : myapp/router.js
+   ```
+## Install dependencies:  
+```bash
+$ cd myapp && npm install
+
+```
+
+#Important Settings
+   1) Open your config/main.js , Please configure your mongo db.(if you don't there will be error)
+
