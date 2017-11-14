@@ -1,0 +1,22 @@
+{
+  "name": "create-express-api-mvc",
+  "version": "1.0.1",
+  "description": "This is a package manager that makes it easy to generate boilerplate to start writing API using express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mayomi Ayandiran",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "commander": "^2.11.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mkdirp": "^0.5.1",
+    "mongoose": "^4.13.2",
+    "morgan": "^1.9.0",
+    "sorted-object": "^2.0.1"
+  }
+}
