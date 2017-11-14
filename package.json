@@ -19,7 +19,7 @@
   "main": "bin/express-api-cli.js",
   "preferGlobal": true,
   "bin": {
-    "express": "./bin/express-cli.js"
+    "express-api": "./bin/express-api-cli.js"
   },
   "author": "Mayomi Ayandiran",
   "license": "MIT",
