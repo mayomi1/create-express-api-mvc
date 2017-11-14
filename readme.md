@@ -40,3 +40,41 @@ $ cd myapp && npm install
 #Important Settings
    1) Open your config/main.js , Please configure your mongo db.(if you don't there will be error)
 
+
+###File Structure
+
+```bash
+$ express-api myapp
+
+
+myapp
+|
+|
+|____controller
+|      |____home.js
+|      
+|     
+|____config
+|     |
+|     |____main.js
+|
+|____node_modules
+|
+|
+|____models
+|    |__main.js
+|
+|
+|
+|    
+|____router.js 
+|
+|
+|
+|_____app.js
+|
+|
+|
+|_____package.json
+
+ ```
