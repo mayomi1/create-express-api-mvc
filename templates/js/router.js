@@ -9,12 +9,8 @@ module.exports = function (app) {
 
     apiRoutes.use('/home', homeRoutes);
 
+    // route to  home
     homeRoutes.get('/', HomeController.home);
-
-    homeRoutes.post('/', HomeController.addHome);
-
-
-
 
 // Set url for API group routes
     app.use('/api', apiRoutes);

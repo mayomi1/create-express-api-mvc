@@ -9,6 +9,7 @@ const config = require('./config/main');
 
 const app = express();
 
+// Configure your middlewares
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -20,7 +21,7 @@ app.use(morgan('dev')); // log every request to the console
 
 app.use(cors());
 
-//launch ============================
+// Start the server
 app.listen(config.port);
 console.log('Your server is running on ' + config.port);
 
