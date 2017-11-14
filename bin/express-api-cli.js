@@ -136,38 +136,41 @@ function createApplication (name, path) {
         console.log()
     }
 
-    // JavaScript
-    let app = loadTemplate('js/app.js');
-    let www = loadTemplate('js/www');
+    // // JavaScript
+    // let app = loadTemplate('js/app.js');
+    // let www = loadTemplate('js/www');
 
-    // App name
-    www.locals.name = name;
+    // // App name
+    // www.locals.name = name;
+    //
+    // // App modules
+    // app.locals.modules = Object.create(null);
+    // app.locals.uses = [];
 
-    // App modules
-    app.locals.modules = Object.create(null);
-    app.locals.uses = [];
+
+
 
     mkdir(path, function () {
-        mkdir(path + 'app/', function () {
+        mkdir(path + '/', function () {
             copyTemplate('js/app.js', path + '/app.js');
         });
 
-        mkdir(path + 'app/', function () {
+        mkdir(path + '/', function () {
             copyTemplate('js/router.js', path + '/router.js');
         });
 
-        mkdir(path + 'app/controllers', function () {
+        mkdir(path + '/controllers/', function () {
             copyTemplate('js/controllers/home.js', path + '/controllers/home.js');
             complete()
         });
 
-        mkdir(path + 'app/config', function () {
-            copyTemplate('js/config/main.js', path + 'config/main.js');
+        mkdir(path + '/config/', function () {
+            copyTemplate('js/config/main.js', path + '/config/main.js');
             complete()
         });
 
-        mkdir(path + 'app/models', function () {
-            copyTemplate('js/models/home.js', path + 'models/home.js');
+        mkdir(path + '/models/', function () {
+            copyTemplate('js/models/main.js', path + '/models/main.js');
             complete()
         });
 
@@ -195,7 +198,7 @@ function createApplication (name, path) {
 
         // write files
         write(path + '/package.json', JSON.stringify(pkg, null, 2) + '\n')
-        write(path + '/app.js', app.render());
+        write(path + '/app.js', null);
         // mkdir(path + '/bin', function () {
         //     write(path + '/bin/www', www.render(), MODE_0755);
         //     complete()
@@ -281,12 +284,12 @@ function main () {
     // App name
     let appName = createAppName(path.resolve(destinationPath)) || 'hello-world';
 
-    // Default view engine
-    if (program.view === undefined) {
-        warning('the default view engine will not be jade in future releases\n' +
-            "use `--view=jade' or `--help' for additional options")
-        program.view = 'jade'
-    }
+    // // Default view engine
+    // if (program.view === undefined) {
+    //     warning('the default view engine will not be jade in future releases\n' +
+    //         "use `--view=jade' or `--help' for additional options")
+    //     program.view = 'jade'
+    // }
 
     // Generate application
     emptyDirectory(destinationPath, function (empty) {
@@ -320,6 +323,10 @@ function mkdir (path, fn) {
         fn && fn()
     })
 }
+
+// function loadTemplate(name) {
+//     return fs.readFileSync(path.join(__dirname, '..', 'templates', name), 'utf-8');
+// }
 
 /**
  * Display a warning similar to how errors are displayed by commander.
