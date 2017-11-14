@@ -2,9 +2,24 @@
   "name": "create-express-api-mvc",
   "version": "1.0.1",
   "description": "This is a package manager that makes it easy to generate boilerplate to start writing API using express",
-  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "expressjs/generator",
+  "keywords": [
+    "express",
+    "framework",
+    "web",
+    "rest",
+    "restful",
+    "router",
+    "app",
+    "api"
+  ],
+  "main": "bin/express-api-cli.js",
+  "preferGlobal": true,
+  "bin": {
+    "express": "./bin/express-cli.js"
   },
   "author": "Mayomi Ayandiran",
   "license": "MIT",
@@ -18,5 +33,10 @@
     "mongoose": "^4.13.2",
     "morgan": "^1.9.0",
     "sorted-object": "^2.0.1"
-  }
+  },
+  "files": [
+    "LICENSE",
+    "bin/",
+    "templates/"
+  ]
 }
