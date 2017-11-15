@@ -8,6 +8,8 @@
 $ npm install -g create-express-api-mvc -g 
 ```
 
+#### After installation you can then write your project by doing `express-api your-project-name` 😄
+
 
 #### For example, the following creates an Express app named myapp in the current working directory:
 
