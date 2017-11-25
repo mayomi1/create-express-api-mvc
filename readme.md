@@ -80,3 +80,11 @@ myapp
 |_____package.json
 
  ```
+ 
+ 
+ ### Credits
+ 
+ Inspired by https://github.com/expressjs/generator
+ 
+ ### License 
+ create-express-api-mvc is under MIT license - http://www.opensource.org/licenses/mit-license.php
