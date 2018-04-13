@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-$ npm install -g create-express-api-mvc -g 
+$ npm install -g create-express-api-mvc
 ```
 
 #### After installation you can then write your project by doing `express-api your-project-name` 😄
